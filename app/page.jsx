@@ -37,7 +37,7 @@ export default function Home() {
           <ul className="list-disc pl-10 mb-14 text-xl flex flex-col gap-2">
             <li>
               <span className="font-bold">Experts Confirmés</span> : Plus de 10
-              ans d'expérience en plomberie
+              ans d&apos;expérience en plomberie
             </li>
             <li>
               <span className="font-bold">Intervention Rapide</span> :
@@ -53,7 +53,7 @@ export default function Home() {
             </li>
             <li>
               <span className="font-bold">Satisfaction Garantie</span>: Notre
-              réputation parle d'elle-même.
+              réputation parle d&apos;elle-même.
             </li>
             <li>
               <span className="font-bold">Qualité Inégalée</span>: Matériaux de
