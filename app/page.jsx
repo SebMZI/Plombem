@@ -30,7 +30,7 @@ export default function Home() {
         className="py-24 flex flex-row justify-between items-center w-full px-5
       "
       >
-        <div>
+        <div className="pr-6">
           <h2 className="uppercase text-primary font-bold text-2xl mb-8">
             Pourquoi nous choisir ?
           </h2>
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
         <Image
           className="rounded-lg"
-          height={389}
+          width={400}
           src={nousPic}
           alt="notre équipe de plombier"
         />
