@@ -12,7 +12,7 @@ import Services from "./components/Services";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <section className="py-24 w-full flex flex-row items-center justify-between">
+      <section className="py-24 w-full flex flex-row items-center justify-between px-5">
         <div className="uppercase">
           <h1 className="text-primary font-bold text-5xl mb-6 ">
             Votre Solution Plomberie de Qualité
@@ -27,7 +27,7 @@ export default function Home() {
       </section>
       <section
         id="#nous-choisir"
-        className="py-24 flex flex-row justify-between items-center w-full
+        className="py-24 flex flex-row justify-between items-center w-full px-5
       "
       >
         <div>
@@ -100,7 +100,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section id="services" className=" w-full py-24">
+      <section id="services" className=" w-full py-24 px-5">
         <div className="uppercase text-center mb-11">
           <h2 className="text-primary font-bold text-2xl mb-2">
             Découvrez Nos Solutions Plomberie

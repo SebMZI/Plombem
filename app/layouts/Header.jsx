@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="flex flex-row justify-between items-center py-4">
+    <header className="flex flex-row justify-between items-center py-4 px-5">
       <Image src={logoImg} alt="plombem logo" />
       <ul className="flex flex-row gap-10">
         <li>
