@@ -23,7 +23,7 @@ export default function Home() {
           <Buttons linkTo={"/#urgence"} name={"depannage express"} />
           <p className="lowercase mt-6">+ de 1000 clients accompagnés</p>
         </div>
-        <Image width={600} src={heroPic} alt="réparation d'un évier qui fuit" />
+        <Image width={500} src={heroPic} alt="réparation d'un évier qui fuit" />
       </section>
       <section
         id="#nous-choisir"
