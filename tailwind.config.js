@@ -6,6 +6,10 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      phone: "320px",
+      tablet: "425px",
+    },
     colors: {
       primary: "#254B74",
       secondary: "#2B83C6",

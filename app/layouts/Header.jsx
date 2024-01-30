@@ -10,16 +10,33 @@ const Header = () => {
       </Link>
       <ul className="flex flex-row gap-10">
         <li>
-          <Link href={"/"}>Accueil</Link>
+          <Link href={"/"} className="hover:border-b-2 hover:border-ascent ">
+            Accueil
+          </Link>
         </li>
         <li>
-          <Link href={"/#nous-choisir"}>Nous Choisir</Link>
+          <Link
+            href={"/#nous-choisir"}
+            className="hover:border-b-2 hover:border-ascent "
+          >
+            Nous Choisir
+          </Link>
         </li>
         <li>
-          <Link href={"/#services"}>Services</Link>
+          <Link
+            href={"/#services"}
+            className="hover:border-b-2 hover:border-ascent "
+          >
+            Services
+          </Link>
         </li>
         <li>
-          <Link href={"/#contact"}>Contact</Link>
+          <Link
+            href={"/#contact"}
+            className="hover:border-b-2 hover:border-ascent "
+          >
+            Contact
+          </Link>
         </li>
       </ul>
     </header>

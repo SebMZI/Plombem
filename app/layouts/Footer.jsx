@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="py-[69px] bg-third px-[120px] flex flex-row items-center gap-7 font-medium">
+    <footer className="phone:px-10  phone:flex-col phone:gap-1 py-[69px] bg-third px-[120px] flex flex-row items-center gap-7 font-medium">
       <Link href="/">
         <Image src={logoImg} alt="plombem logo" />
       </Link>
