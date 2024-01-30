@@ -55,7 +55,7 @@ export default function Home() {
               vos besoins spécifiques.
             </li>
             <li className="text-justify">
-              <span className="font-bold">Transaparence Totale</span> : Tarifs
+              <span className="font-bold">Transparence Totale</span> : Tarifs
               clairs, conseils honnêtes.
             </li>
             <li className="text-justify">
