@@ -29,7 +29,7 @@ export default function Home() {
           width={500}
           src={heroPic}
           alt="réparation d'un évier qui fuit"
-          className="phone:w-96 laptop:w-[500]"
+          className="phone:w-80 laptop:w-[600px]"
         />
       </section>
       <section
