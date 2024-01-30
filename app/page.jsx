@@ -11,17 +11,17 @@ import Services from "./components/Services";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <section className="phone:flex-col-reverse phone:py-14 py-24 w-full flex flex-row items-center justify-between px-5">
+    <main className="flex min-h-screen flex-col items-center justify-between ">
+      <section className="phone:flex-col-reverse phone:py-14 py-24 w-full flex laptop:flex-row items-center justify-between px-5">
         <div className="uppercase">
-          <h1 className="phone:text-3xl phone:mb-4 text-primary font-bold text-5xl mb-6 ">
+          <h1 className="phone:text-3xl phone:mb-4 text-primary font-bold laptop:text-5xl laptop:mb-6 ">
             Votre Solution Plomberie de Qualité
           </h1>
-          <h2 className="phone:text-lg phone:mb-10 text-2xl mb-14">
+          <h2 className="phone:text-lg phone:mb-10 laptop:text-2xl laptop:mb-14">
             Des Experts en Plomberie Prêts à Vous Servir
           </h2>
           <Buttons linkTo={"/#urgence"} name={"depannage express"} />
-          <p className="lowercase mt-6 phone:text-sm">
+          <p className="lowercase mt-6 text-sm">
             + de 1000 clients accompagnés
           </p>
         </div>
@@ -29,19 +29,19 @@ export default function Home() {
           width={500}
           src={heroPic}
           alt="réparation d'un évier qui fuit"
-          className="phone:w-96"
+          className="phone:w-96 laptop:w-[500]"
         />
       </section>
       <section
         id="#nous-choisir"
-        className="phone:flex-col-reverse phone:py-14 phone:gap-10 py-24 flex flex-row justify-between items-center w-full px-5
+        className="phone:flex-col-reverse phone:py-14 phone:gap-10 laptop:gap-0 py-24 flex laptop:flex-row  justify-around items-center w-full px-5
       "
       >
         <div className="pr-6">
-          <h2 className="uppercase text-primary font-bold text-2xl mb-8 phone:text-xl">
+          <h2 className="uppercase text-primary font-bold laptop:first-line:text-2xl mb-8 phone:text-xl">
             Pourquoi nous choisir ?
           </h2>
-          <ul className="list-disc pl-6 mb-14 text-lg flex flex-col gap-2 phone:text-sm">
+          <ul className="list-disc pl-6 mb-14 laptop:text-base flex flex-col gap-2 phone:text-sm ">
             <li className="text-justify">
               <span className="font-bold">Experts Confirmés</span> : Plus de 10
               ans d&apos;expérience en plomberie
@@ -78,17 +78,17 @@ export default function Home() {
       </section>
       <section
         id="advise"
-        className="bg-[#F2F4F8] w-full  px-10 py-20 phone:px-5"
+        className="bg-[#F2F4F8] w-full  laptop:px-10 py-20 phone:px-5"
       >
         <div className="uppercase text-center mb-11">
-          <h2 className="text-primary font-bold text-2xl mb-2 phone:text-xl">
+          <h2 className="text-primary font-bold laptop:text-2xl mb-2 phone:text-xl">
             Ce que pensent nos clients
           </h2>
           <p className=" max-w-2xl m-auto phone:text-sm">
             ils nous font confiance
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-80 overflow-scroll w-full">
+        <div className="phone:grid phone:grid-cols-3 phone:gap-80 laptop:gap-12 laptop:overflow-hidden phone:overflow-scroll w-full laptop:flex laptop:flex-row laptop:justify-around">
           <Advise
             value={4}
             name={"Sophie B."}
@@ -114,14 +114,14 @@ export default function Home() {
       </section>
       <section id="services" className=" w-full py-24 px-5 ">
         <div className="uppercase text-center mb-11">
-          <h2 className="text-primary font-bold text-2xl mb-2 phone:text-xl">
+          <h2 className="text-primary font-bold laptop:text-2xl mb-2 phone:text-xl">
             Découvrez Nos Solutions Plomberie
           </h2>
           <p className="phone:text-sm">
             Réparations, Installations et Entretien - Nous Couvrons Tout
           </p>
         </div>
-        <div className="grid grid-cols-3 phone:grid-cols-1 phone:gap-10">
+        <div className="grid laptop:grid-cols-3 phone:grid-cols-1 phone:gap-10">
           <Services
             image={services1Pic}
             name={"fuites"}
@@ -143,8 +143,10 @@ export default function Home() {
         id="urgence"
         className="phone:px-5 uppercase w-full bg-primary text-[#FFFFFF] px-32 py-24"
       >
-        <h2 className="text-4xl font-bold phone:text-2xl">Une Urgence ?</h2>
-        <p className="mb-5 text-third text-2xl phone:text-xl">
+        <h2 className="laptop:text-4xl font-bold phone:text-2xl">
+          Une Urgence ?
+        </h2>
+        <p className="mb-5 text-third laptop:text-2xl phone:text-xl">
           Appelez-nous dès maintenant!
         </p>
         <Buttons linkTo={"tel:0788963541"} name={"07 88 96 35 41"} />
@@ -152,7 +154,7 @@ export default function Home() {
 
       <section id="contact" className="w-full py-24 phone:px-5">
         <div className="uppercase text-center mb-11">
-          <h2 className="text-primary font-bold text-2xl mb-2 phone:text-xl">
+          <h2 className="text-primary font-bold laptop:text-2xl mb-2 phone:text-xl">
             Nous Sommes à Votre Écoute
           </h2>
           <p className=" max-w-2xl m-auto phone:text-sm">
@@ -161,7 +163,7 @@ export default function Home() {
           </p>
         </div>
         <form className="flex flex-col max-w-screen-sm m-auto gap-3 ">
-          <div className="phone:flex-col flex flex-row justify-between gap-6">
+          <div className="phone:flex-col flex laptop:flex-row justify-between gap-6">
             <div className="flex flex-col w-full gap-1">
               <label
                 htmlFor="lastname"
@@ -186,7 +188,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="phone:flex-col flex flex-row justify-between gap-6 ">
+          <div className="phone:flex-col flex laptop:flex-row justify-between gap-6 ">
             <div className="flex flex-col w-full gap-1">
               <label htmlFor="email" className="text-secondary font-semibold">
                 Email

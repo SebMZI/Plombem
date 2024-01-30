@@ -6,15 +6,15 @@ import { useState } from "react";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
-  const genericHamburgerLine = `h-1 w-8 my-1 rounded-full bg-primary transition ease transform duration-300 z-30 tablette:hidden`;
+  const genericHamburgerLine = `h-1 w-8 my-1 rounded-full bg-primary transition ease transform duration-300 z-30 `;
   return (
     <header className="flex flex-row justify-between items-center py-4 px-5">
       <Link href={"/"}>
         <Image src={logoImg} alt="plombem logo" className="phone:w-3/4" />
       </Link>
-      <nav>
+      <nav className="flex flex-row items-center">
         <button
-          className="flex flex-col h-12 w-12  justify-center items-center group"
+          className="flex flex-col h-12 w-12  justify-center items-center group laptop:hidden"
           onClick={() => setToggle(!toggle)}
         >
           <div
@@ -39,7 +39,7 @@ const Header = () => {
         </button>
         <ul
           onClick={() => setToggle(!toggle)}
-          className={`text-white tablette:relative tablette:w-auto tablette:h-auto tablette:flex-row gap-6 transition tablette:flex justify-center items-center ${
+          className={`text-white laptop:relative laptop:w-auto laptop:h-auto laptop:flex-row gap-6 transition laptop:flex justify-center items-center ${
             toggle
               ? "phone:flex phone:fixed phone:inset-0 phone:flex-col phone:w-screen  phone:h-screen phone:bg-[#FFFFFF] phone:z-20   transition-all"
               : "phone:hidden"

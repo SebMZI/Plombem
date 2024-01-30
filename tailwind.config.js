@@ -9,6 +9,7 @@ module.exports = {
     screens: {
       phone: "320px",
       tablet: "425px",
+      laptop: "768px",
     },
     colors: {
       primary: "#254B74",
