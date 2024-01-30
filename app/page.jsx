@@ -78,7 +78,7 @@ export default function Home() {
       </section>
       <section
         id="advise"
-        className="bg-[#F2F4F8] w-full  laptop:px-10 py-20 phone:px-5"
+        className="bg-[#F2F4F8] w-full  laptop:px-10 py-10 phone:px-5"
       >
         <div className="uppercase text-center mb-11">
           <h2 className="text-primary font-bold laptop:text-2xl mb-2 phone:text-xl">
