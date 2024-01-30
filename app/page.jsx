@@ -34,28 +34,28 @@ export default function Home() {
           <h2 className="uppercase text-primary font-bold text-2xl mb-8">
             Pourquoi nous choisir ?
           </h2>
-          <ul className="list-disc pl-10 mb-14 text-xl flex flex-col gap-2">
-            <li>
+          <ul className="list-disc pl-6 mb-14 text-lg flex flex-col gap-2">
+            <li className="text-justify">
               <span className="font-bold">Experts Confirmés</span> : Plus de 10
               ans d&apos;expérience en plomberie
             </li>
-            <li>
+            <li className="text-justify">
               <span className="font-bold">Intervention Rapide</span> :
               Disponibles 24/7 pour les urgences
             </li>
-            <li>
+            <li className="text-justify">
               <span className="font-bold">Service Personnalisé</span> : Adapté à
               vos besoins spécifiques.
             </li>
-            <li>
+            <li className="text-justify">
               <span className="font-bold">Transaparence Totale</span> : Tarifs
               clairs, conseils honnêtes.
             </li>
-            <li>
+            <li className="text-justify">
               <span className="font-bold">Satisfaction Garantie</span>: Notre
               réputation parle d&apos;elle-même.
             </li>
-            <li>
+            <li className="text-justify">
               <span className="font-bold">Qualité Inégalée</span>: Matériaux de
               haut niveau, résultats durables.
             </li>
@@ -69,14 +69,14 @@ export default function Home() {
           alt="notre équipe de plombier"
         />
       </section>
-      <section id="advise" className="bg-[#F2F4F8] w-full  px-20 py-20">
+      <section id="advise" className="bg-[#F2F4F8] w-full  px-10 py-20">
         <div className="uppercase text-center mb-11">
           <h2 className="text-primary font-bold text-2xl mb-2">
             Ce que pensent nos clients
           </h2>
-          <p className="text-lg max-w-2xl m-auto">ils nous font confiance</p>
+          <p className=" max-w-2xl m-auto">ils nous font confiance</p>
         </div>
-        <div className="flex flex-row gap-20">
+        <div className="flex flex-row gap-5">
           <Advise
             value={4}
             name={"Sophie B."}
@@ -105,11 +105,11 @@ export default function Home() {
           <h2 className="text-primary font-bold text-2xl mb-2">
             Découvrez Nos Solutions Plomberie
           </h2>
-          <p className="text-lg">
+          <p className="">
             Réparations, Installations et Entretien - Nous Couvrons Tout
           </p>
         </div>
-        <div className="flex flex-row justify-around items-center">
+        <div className="grid grid-cols-3">
           <Services
             image={services1Pic}
             name={"fuites"}
@@ -118,14 +118,12 @@ export default function Home() {
           <Services
             image={services2Pic}
             name={"installation"}
-            desc={
-              "Installation de Plomberie  pour Votre Confort et Votre Sécurité"
-            }
+            desc={"Mise en place pour Votre Confort et Sécurité"}
           />
           <Services
             image={services3Pic}
             name={"débouchage"}
-            desc={"Votre Solution Rapide pour un Écoulement sans Problèmes"}
+            desc={"Votre Solution pour un Écoulement sans Problèmes"}
           />
         </div>
       </section>
@@ -143,7 +141,7 @@ export default function Home() {
           <h2 className="text-primary font-bold text-2xl mb-2">
             Nous Sommes à Votre Écoute
           </h2>
-          <p className="text-lg max-w-2xl m-auto">
+          <p className=" max-w-2xl m-auto">
             Contactez-nous dès maintenant pour des solutions plomberie rapides
             et efficaces.
           </p>

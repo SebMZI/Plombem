@@ -8,7 +8,7 @@ const Services = ({ image, name, desc }) => {
       <h2 className="text-center text-secondary font-semibold text-lg">
         {name}
       </h2>
-      <p className="text-third w-4/6 text-center">{desc}</p>
+      <p className="text-third w-5/6 text-center">{desc}</p>
     </article>
   );
 };
