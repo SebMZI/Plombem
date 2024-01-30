@@ -14,14 +14,16 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <section className="phone:flex-col-reverse phone:py-14 py-24 w-full flex flex-row items-center justify-between px-5">
         <div className="uppercase">
-          <h1 className="phone:text-4xl phone:mb-4 text-primary font-bold text-5xl mb-6 ">
+          <h1 className="phone:text-3xl phone:mb-4 text-primary font-bold text-5xl mb-6 ">
             Votre Solution Plomberie de Qualité
           </h1>
-          <h2 className="phone:text-xl phone:mb-10 text-2xl mb-14">
+          <h2 className="phone:text-lg phone:mb-10 text-2xl mb-14">
             Des Experts en Plomberie Prêts à Vous Servir
           </h2>
           <Buttons linkTo={"/#urgence"} name={"depannage express"} />
-          <p className="lowercase mt-6">+ de 1000 clients accompagnés</p>
+          <p className="lowercase mt-6 phone:text-sm">
+            + de 1000 clients accompagnés
+          </p>
         </div>
         <Image
           width={500}
@@ -36,10 +38,10 @@ export default function Home() {
       "
       >
         <div className="pr-6">
-          <h2 className="uppercase text-primary font-bold text-2xl mb-8">
+          <h2 className="uppercase text-primary font-bold text-2xl mb-8 phone:text-xl">
             Pourquoi nous choisir ?
           </h2>
-          <ul className="list-disc pl-6 mb-14 text-lg flex flex-col gap-2">
+          <ul className="list-disc pl-6 mb-14 text-lg flex flex-col gap-2 phone:text-sm">
             <li className="text-justify">
               <span className="font-bold">Experts Confirmés</span> : Plus de 10
               ans d&apos;expérience en plomberie
@@ -74,14 +76,19 @@ export default function Home() {
           alt="notre équipe de plombier"
         />
       </section>
-      <section id="advise" className="bg-[#F2F4F8] w-full  px-10 py-20">
+      <section
+        id="advise"
+        className="bg-[#F2F4F8] w-full  px-10 py-20 phone:px-5"
+      >
         <div className="uppercase text-center mb-11">
-          <h2 className="text-primary font-bold text-2xl mb-2">
+          <h2 className="text-primary font-bold text-2xl mb-2 phone:text-xl">
             Ce que pensent nos clients
           </h2>
-          <p className=" max-w-2xl m-auto">ils nous font confiance</p>
+          <p className=" max-w-2xl m-auto phone:text-sm">
+            ils nous font confiance
+          </p>
         </div>
-        <div className="flex flex-row gap-5">
+        <div className="grid grid-cols-3 gap-80 overflow-scroll w-full">
           <Advise
             value={4}
             name={"Sophie B."}
@@ -107,10 +114,10 @@ export default function Home() {
       </section>
       <section id="services" className=" w-full py-24 px-5 ">
         <div className="uppercase text-center mb-11">
-          <h2 className="text-primary font-bold text-2xl mb-2">
+          <h2 className="text-primary font-bold text-2xl mb-2 phone:text-xl">
             Découvrez Nos Solutions Plomberie
           </h2>
-          <p className="">
+          <p className="phone:text-sm">
             Réparations, Installations et Entretien - Nous Couvrons Tout
           </p>
         </div>
@@ -134,19 +141,21 @@ export default function Home() {
       </section>
       <section
         id="urgence"
-        className="phone:px-20 uppercase w-full bg-primary text-[#FFFFFF] px-32 py-24"
+        className="phone:px-5 uppercase w-full bg-primary text-[#FFFFFF] px-32 py-24"
       >
-        <h2 className="text-4xl font-bold">Une Urgence ?</h2>
-        <p className="mb-5 text-third text-2xl">Appelez-nous dès maintenant!</p>
+        <h2 className="text-4xl font-bold phone:text-2xl">Une Urgence ?</h2>
+        <p className="mb-5 text-third text-2xl phone:text-xl">
+          Appelez-nous dès maintenant!
+        </p>
         <Buttons linkTo={"tel:0788963541"} name={"07 88 96 35 41"} />
       </section>
 
       <section id="contact" className="w-full py-24 phone:px-5">
         <div className="uppercase text-center mb-11">
-          <h2 className="text-primary font-bold text-2xl mb-2">
+          <h2 className="text-primary font-bold text-2xl mb-2 phone:text-xl">
             Nous Sommes à Votre Écoute
           </h2>
-          <p className=" max-w-2xl m-auto">
+          <p className=" max-w-2xl m-auto phone:text-sm">
             Contactez-nous dès maintenant pour des solutions plomberie rapides
             et efficaces.
           </p>
